@@ -34,11 +34,13 @@ LSTM Layer: Processes the sequence
 Linear Layer: Maps LSTM outputs to vocabulary space
 
 ### Training Details
+Framework: Pytorch 
+
 Loss: CrossEntropyLoss (ignores <PAD>)
 
 Optimizer: Adam
 
-Scheduler: StepLR
+Scheduler: CosineAnnealingLR
 
 Beam Search supported during caption generation for better quality
 
